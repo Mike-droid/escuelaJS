@@ -1,0 +1,52 @@
+$blanco: white;
+
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(#21c08b, #ab88ff);
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: $blanco;
+}
+
+header img{
+    width: 200px;
+}
+
+section h1{
+    font-size: 50px;
+    font-weight: 400;
+    animation: cresciendo 1.5s alternate infinite ease-in;
+}
+
+@keyframes cresciendo{
+    0%  {transform: scale(0.8);}
+    100%{transform: scale(1.5);}
+}
+
+section h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: $blanco;
+    padding-left: 20px;
+}
